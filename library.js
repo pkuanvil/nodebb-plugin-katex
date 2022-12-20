@@ -10,9 +10,11 @@ nbbKaTeX.updateParserRules = (parser) => {
 	});
 };
 
-nbbKaTeX.getLinkTags = ({ links }) => {
+nbbKaTeX.getLinkTags = (hookData) => {
+	const { links } = hookData;
 	links.push({
 		rel: 'prefetch stylesheet',
 		href: 'https://fastly.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css',
 	});
+	return hookData;
 };
