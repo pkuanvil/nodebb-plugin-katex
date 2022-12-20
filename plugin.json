@@ -3,7 +3,6 @@
 	"name": "Katex integration",
 	"description": "KaTeX integration for NodeBB",
 	"url": "https://github.com/pkuanvil/nodebb-plugin-katex",
-	"library": "./library.js",
 	"hooks": [
 		{ "hook": "action:markdown.updateParserRules", "method": "updateParserRules" },
 		{ "hook": "filter:meta.getLinkTags", "method": "getLinkTags"}
