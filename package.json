@@ -1,0 +1,37 @@
+{
+	"name": "@pkuanvil/nodebb-plugin-katex",
+	"version": "0.0.1",
+	"description": "KaTeX integration for NodeBB (requires official Markdown plugin)",
+	"main": "library.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pkuanvil/nodebb-plugin-katex"
+	},
+	"keywords": [
+		"nodebb",
+		"plugin",
+		"katex",
+		"latex",
+		"tex",
+		"markdown-it",
+		"markdown"
+	],
+	"author": "PKU Anvil <pkuanvil@proton.me>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pkuanvil/nodebb-plugin-katex/issues"
+	},
+	"dependencies": {
+		"markdown-it-texmath": "^1.0.0",
+		"katex": "^0.15.6"
+	},
+	"nbbpm": {
+		"compatibility": "^3.0.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "16.2.1",
+		"eslint": "8.x",
+		"eslint-config-nodebb": "0.1.1",
+		"eslint-plugin-import": "2.x"
+	}
+}
