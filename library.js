@@ -5,7 +5,11 @@ const katexMath = require('markdown-it-texmath');
 const nbbKaTeX = module.exports;
 
 nbbKaTeX.updateParserRules = (parser) => {
+	const katexOptions = {
+		strict: true,
+	};
 	parser.use(katexMath, {
+		katexOptions,
 		delimiters: ['dollars', 'brackets'],
 	});
 };
