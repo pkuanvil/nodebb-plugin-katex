@@ -1,6 +1,6 @@
 {
 	"name": "@pkuanvil/nodebb-plugin-katex",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "KaTeX integration for NodeBB (requires official Markdown plugin)",
 	"main": "library.js",
 	"repository": {
@@ -27,7 +27,7 @@
 		"katex": "^0.15.6"
 	},
 	"nbbpm": {
-		"compatibility": "^3.0.0"
+		"compatibility": "^2.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "16.2.1",
