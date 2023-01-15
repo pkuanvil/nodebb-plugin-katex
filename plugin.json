@@ -5,6 +5,7 @@
 	"url": "https://github.com/pkuanvil/nodebb-plugin-katex",
 	"hooks": [
 		{ "hook": "action:markdown.updateParserRules", "method": "updateParserRules" },
+		{ "hook": "filter:sanitize.config", "method": "sanitizeConfig" },
 		{ "hook": "filter:meta.getLinkTags", "method": "getLinkTags"}
 	],
 	"upgrades": [

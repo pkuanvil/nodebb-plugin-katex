@@ -23,6 +23,7 @@
 	},
 	"dependencies": {
 		"markdown-it-texmath": "^1.0.0",
+		"lodash": "^4.17.0",
 		"katex": "^0.15.6"
 	},
 	"nbbpm": {
