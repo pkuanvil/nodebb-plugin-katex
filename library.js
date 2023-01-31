@@ -1,5 +1,8 @@
 'use strict';
 
+const nconf = require.main.require('nconf');
+const relative_path = nconf.get('relative_path');
+
 const katexMath = require('markdown-it-texmath');
 const _ = require('lodash');
 
@@ -45,7 +48,7 @@ nbbKaTeX.getLinkTags = (hookData) => {
 	const { links } = hookData;
 	links.push({
 		rel: 'prefetch stylesheet',
-		href: 'https://fastly.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css',
+		href: `${relative_path}/assets/katex.min.css`,
 	});
 	return hookData;
 };
